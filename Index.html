@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Your Love Archetype? | Love Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Falling Sakura Petals Background -->
+    <div class="sakura-container"></div>
+
+    <div class="app-container">
+        <!-- Intro Screen -->
+        <div id="introScreen" class="screen active">
+            <div class="intro-content">
+                <div class="intro-emoji">💗</div>
+                <h1 class="serif-title">What's Your Love Archetype?</h1>
+                <p class="intro-subtitle">Discover which romantic soul resonates with your heart</p>
+                <p class="intro-description">
+                    A soft, whimsical journey through 5 questions to unveil your unique love style. 
+                    Perfect for Pinterest boards and dreamy mood boards. 🌸
+                </p>
+                <button id="startBtn" class="cta-btn">Begin Your Journey</button>
+                <p class="hashtags">#softlife #romanticera #cottagecore</p>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="quiz-container">
+                <!-- Progress Bar -->
+                <div class="progress-section">
+                    <div class="progress-text">
+                        <span id="questionNumber">1</span> <span class="slash">/</span> <span>5</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="question-section">
+                    <h2 id="questionText" class="question-title"></h2>
+                </div>
+
+                <!-- Answer Choices -->
+                <div class="choices-section" id="choicesContainer">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="resultScreen" class="screen">
+            <div class="result-card">
+                <div class="result-header">
+                    <div id="resultEmoji" class="result-emoji"></div>
+                    <h1 id="resultTitle" class="serif-title"></h1>
+                </div>
+
+                <div class="result-body">
+                    <p id="resultDescription" class="result-description"></p>
+                    
+                    <div class="score-section">
+                        <p class="score-label">Your Love Score</p>
+                        <div class="score-bar">
+                            <div id="scoreBarFill" class="score-bar-fill"></div>
+                        </div>
+                        <p id="scorePercentage" class="score-percentage"></p>
+                    </div>
+
+                    <div class="traits-section">
+                        <h3>Your Love Traits</h3>
+                        <div id="traitsContainer" class="traits-grid">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-footer">
+                    <button id="pinBtn" class="pin-btn">
+                        <span>📌</span> Pin My Result
+                    </button>
+                    <button id="shareBtn" class="share-btn">
+                        <span>✨</span> Share This Quiz
+                    </button>
+                </div>
+
+                <p id="resultHashtags" class="result-hashtags"></p>
+
+                <button id="retryBtn" class="retry-btn">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
